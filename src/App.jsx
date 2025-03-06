@@ -1,5 +1,4 @@
 import { Routes, Route } from "react-router-dom";
-import Navbar from "./components/Navbar";
 import Home from "./components/Home";
 import InvoicePortal from "./components/InvoiceGenerationPortal/InvoicePortal";
 import ProductManagement from "./components/ProductManagementPortal/ProductManagement";
@@ -7,7 +6,6 @@ import ProductManagement from "./components/ProductManagementPortal/ProductManag
 function App() {
   return (
     <div>
-      <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/invoice" element={<InvoicePortal />} />
