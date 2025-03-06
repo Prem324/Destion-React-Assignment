@@ -1,0 +1,33 @@
+.invoice-portal-container {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.invoice-portal-container h1 {
+  font-size: 22px;
+  margin-bottom: 16px;
+}
+
+.filter-by-date {
+  align-self: flex-end;
+}
+.filter-by-date input {
+  height: 30px;
+  width: 120px;
+}
+
+@media screen and (min-width: 768px) {
+  .invoice-portal-container {
+    padding: 40px;
+  }
+  .invoice-portal-container h1 {
+    font-size: 38px;
+  }
+  .filter-by-date input {
+    width: 240px;
+    height: 36px;
+    font-size: 16px;
+    padding: 6px;
+  }
+}

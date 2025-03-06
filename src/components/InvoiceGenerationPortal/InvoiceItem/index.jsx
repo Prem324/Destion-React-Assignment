@@ -1,11 +1,12 @@
 import React from "react";
+import "./index.css";
 
 function InvoiceItem({ invoice }) {
   return (
     <div className="invoice-item">
-      <h2>Invoice ID: {invoice.id}</h2>
-      <p>Date: {invoice.date}</p>
-      <p>Total: ${invoice.total}</p>
+      <h2 className="invoice-id">Invoice ID: {invoice.id}</h2>
+      <p className="invoice-date">Date: {invoice.date}</p>
+      <p className="invoice-total">Total: ${invoice.total}</p>
     </div>
   );
 }

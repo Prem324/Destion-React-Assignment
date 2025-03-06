@@ -1,0 +1,31 @@
+.invoice-item {
+  padding: 20px;
+  background-color: aliceblue;
+  margin: 10px;
+  width: 160px;
+  border-radius: 6px;
+}
+
+.invoice-id {
+  font-size: 18px;
+  padding-bottom: 4px;
+}
+
+.invoice-date {
+  font-size: 14px;
+  padding-bottom: 2px;
+}
+.invoice-total {
+  font-size: 14px;
+}
+
+@media screen and (min-width: 768px) {
+  .invoice-item {
+    width: 280px;
+    height: 140px;
+    margin: 20px;
+  }
+  .invoice-id {
+    font-size: 28px;
+  }
+}
