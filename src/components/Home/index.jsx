@@ -1,8 +1,14 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import homeImage from "../../assets/product-invoice-1.png";
 import "./index.css";
 
-const Home = () => {
+function Home() {
+  const navigate = useNavigate();
+  const handleGetStarted = () => {
+    navigate("/product");
+    console.log("Get Started");
+  };
   return (
     <div className="home-container">
       <div className="hero-section">
@@ -14,10 +20,10 @@ const Home = () => {
         <img className="home-page-image" src={homeImage} alt="home-image" />
       </div>
       <div>
-        <button>Get Started</button>
+        <button onClick={handleGetStarted}>Get Started</button>
       </div>
     </div>
   );
-};
+}
 
 export default Home;
