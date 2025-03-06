@@ -1,11 +1,15 @@
 import React from "react";
+import "./index.css";
 
-const ProductItem = () => {
+function ProductItem({ product }) {
   return (
-    <div>
-      <h1>Product Item</h1>
+    <div className="product-item">
+      <img className="product-image" src={product.productImage} />
+      <h2 className="product-name">{product.name}</h2>
+      <p className="product-price">Price: ${product.price}</p>
+      <p className="product-store">Store: {product.store}</p>
     </div>
   );
-};
+}
 
 export default ProductItem;

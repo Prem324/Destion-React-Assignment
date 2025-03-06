@@ -1,0 +1,22 @@
+.product-item {
+  padding: 10px;
+  margin-bottom: 16px;
+}
+
+.product-image {
+  width: 100px;
+  height: 100px;
+  border-radius: 4px;
+}
+
+.product-name {
+  font-size: 16px;
+}
+
+.product-price {
+  font-size: 12px;
+}
+
+.product-store {
+  font-size: 12px;
+}

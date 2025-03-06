@@ -1,0 +1,19 @@
+.product-management-portal-container {
+  padding: 20px;
+}
+
+.product-management-portal-container h1 {
+  font-size: 20px;
+}
+
+.product-filters-container {
+  margin-top: 20px;
+}
+.product-filters-container input {
+}
+
+.product-filters-container select {
+}
+
+.product-filters-container select option {
+}

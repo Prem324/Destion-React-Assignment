@@ -1,11 +1,15 @@
 import React from "react";
+import ProductItem from "../ProductItem";
+import "./index.css";
 
-const ProductList = () => {
+function ProductList({ products }) {
   return (
-    <div>
-      <h1>Product List</h1>
+    <div className="products-list-container">
+      {products.map((product) => (
+        <ProductItem key={product.id} product={product} />
+      ))}
     </div>
   );
-};
+}
 
 export default ProductList;
