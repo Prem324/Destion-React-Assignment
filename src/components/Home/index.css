@@ -43,6 +43,7 @@
   height: 40px;
   font-weight: 500;
   font-size: 16px;
+  cursor: pointer;
 }
 .hero-section div {
   justify-content: flex-start;
@@ -93,6 +94,7 @@
     height: 48px;
     font-weight: 500;
     font-size: 18px;
+    cursor: pointer;
   }
   .home-container > div:nth-child(3) button {
     display: none;

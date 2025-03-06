@@ -14,7 +14,7 @@ function Home() {
       <div className="hero-section">
         <h1>Welcome to Our Application</h1>
         <p>Manage your invoices and products with ease.</p>
-        <button>Get Started</button>
+        <button onClick={handleGetStarted}>Get Started</button>
       </div>
       <div>
         <img className="home-page-image" src={homeImage} alt="home-image" />
