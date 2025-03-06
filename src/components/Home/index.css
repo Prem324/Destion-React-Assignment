@@ -28,6 +28,9 @@
 .hero-section p {
   padding-top: 6px;
 }
+.hero-section button {
+  display: none;
+}
 
 .home-container > div:nth-child(3) button {
   background-color: #007bff;
@@ -41,28 +44,57 @@
   font-weight: 500;
   font-size: 16px;
 }
+.hero-section div {
+  justify-content: flex-start;
+  padding-top: 20px;
+}
 
 @media screen and (min-width: 768px) {
   .home-container {
+    min-height: 70vh;
     padding: 40px;
+    flex-direction: row;
   }
+
   .hero-section {
     padding: 100px 40px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
   .hero-section h1 {
-    font-size: 30px;
+    font-size: 40px;
   }
   .hero-section p {
+    font-size: 20px;
+  }
+  .home-container > div:nth-child(2) {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .home-page-image {
+    width: 500px;
+    height: 300px;
+  }
+  .hero-section button {
+    display: inline;
+    background-color: #007bff;
+    padding: 10px;
+    border: none;
+    color: #ffffff;
+    border-radius: 4px;
+    margin-top: 28px;
+    width: 150px;
+    height: 48px;
+    font-weight: 500;
     font-size: 18px;
   }
-  .hero-section div {
-    justify-content: flex-start;
-    padding-top: 20px;
-  }
-  .hero-section div button {
-    font-size: 16px;
-    width: 140px;
-    height: 40px;
-    font-weight: 500;
+  .home-container > div:nth-child(3) button {
+    display: none;
   }
 }
