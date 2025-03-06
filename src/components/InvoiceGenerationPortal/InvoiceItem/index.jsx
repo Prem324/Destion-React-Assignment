@@ -1,11 +1,13 @@
 import React from "react";
 
-const InvoiceItem = () => {
+function InvoiceItem({ invoice }) {
   return (
-    <div>
-      <h1>Invoice Item</h1>
+    <div className="invoice-item">
+      <h2>Invoice ID: {invoice.id}</h2>
+      <p>Date: {invoice.date}</p>
+      <p>Total: ${invoice.total}</p>
     </div>
   );
-};
+}
 
 export default InvoiceItem;

@@ -1,11 +1,14 @@
 import React from "react";
+import InvoiceItem from "../InvoiceItem";
 
-const InvoiceList = () => {
+function InvoiceList({ invoices }) {
   return (
     <div>
-      <h1>Invoice List</h1>
+      {invoices.map((invoice) => (
+        <InvoiceItem key={invoice.id} invoice={invoice} />
+      ))}
     </div>
   );
-};
+}
 
 export default InvoiceList;
