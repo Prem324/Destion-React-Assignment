@@ -3,6 +3,7 @@ import Home from "./components/Home";
 import Header from "./components/Header";
 import InvoicePortal from "./components/InvoiceGenerationPortal/InvoicePortal";
 import ProductManagement from "./components/ProductManagementPortal/ProductManagement";
+import ProductDetails from "./components/ProductManagementPortal/ProductDetails";
 import "./App.css";
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/invoice" element={<InvoicePortal />} />
         <Route path="/product" element={<ProductManagement />} />
+        <Route path="/product/:id" element={<ProductDetails />} />
       </Routes>
     </>
   );
