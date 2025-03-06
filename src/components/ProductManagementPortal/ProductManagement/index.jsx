@@ -1,9 +1,9 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import ProductList from "../ProductList";
 import "./index.css";
 
 function ProductManagement() {
-  const [products] = useState([
+  /*const [products, setProducts] = useState([
     {
       id: 1,
       name: "Spray",
@@ -51,7 +51,17 @@ function ProductManagement() {
       productImage:
         "https://t3.ftcdn.net/jpg/00/47/97/64/360_F_47976451_mP8ttiBtPoJ3ymdUWeVGWEndx8OktFbV.jpg",
     },
-  ]);
+  ]);*/
+
+  const [products, setProducts] = useState([]);
+
+  useEffect(() => {
+    fetch("http://localhost:3000/products")
+      .then((response) => response.json())
+      .then((data) => setProducts(data))
+      .catch((error) => console.log("Error fetching products:", error));
+  });
+
   return (
     <div className="product-management-portal-container">
       <h1>Product Management</h1>

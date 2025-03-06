@@ -1,0 +1,184 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Laptop",
+      "description": "High-performance laptop with 16GB RAM and 512GB SSD.",
+      "price": 1200,
+      "quantity": 10,
+      "store": "Store 1",
+      "image": "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "id": 2,
+      "name": "Smartphone",
+      "description": "Latest model smartphone with 128GB storage.",
+      "price": 800,
+      "quantity": 25,
+      "store": "Store 2",
+      "image": "https://images.unsplash.com/photo-1598327105666-5b89351aff97?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "id": 3,
+      "name": "Tablet",
+      "description": "10-inch display tablet with 64GB storage.",
+      "price": 500,
+      "quantity": 15,
+      "store": "Store 1",
+      "image": "https://images.unsplash.com/photo-1544244015-0df4b3ffc6b0?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "id": 4,
+      "name": "Monitor",
+      "description": "27-inch 4K monitor with HDR support.",
+      "price": 300,
+      "quantity": 20,
+      "store": "Store 2",
+      "image": "https://images.unsplash.com/photo-1586210579191-33b45e38fa2c?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "id": 5,
+      "name": "Keyboard",
+      "description": "Mechanical gaming keyboard with RGB lighting.",
+      "price": 150,
+      "quantity": 30,
+      "store": "Store 1",
+      "image": "https://images.unsplash.com/photo-1587829741301-dc798b83add3?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "id": 6,
+      "name": "Mouse",
+      "description": "Wireless ergonomic mouse with adjustable DPI.",
+      "price": 50,
+      "quantity": 50,
+      "store": "Store 2",
+      "image": "https://images.unsplash.com/photo-1527864550417-7fd91fc51a46?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "id": 7,
+      "name": "Printer",
+      "description": "All-in-one printer with Wi-Fi connectivity.",
+      "price": 200,
+      "quantity": 12,
+      "store": "Store 1",
+      "image": "https://images.unsplash.com/photo-1599658880436-c61792e70672?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "id": 8,
+      "name": "Headphones",
+      "description": "Noise-cancelling headphones with 20-hour battery life.",
+      "price": 250,
+      "quantity": 18,
+      "store": "Store 2",
+      "image": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "id": 9,
+      "name": "External Hard Drive",
+      "description": "1TB portable hard drive with USB 3.0 support.",
+      "price": 80,
+      "quantity": 40,
+      "store": "Store 1",
+      "image": "https://images.unsplash.com/photo-1597852074816-d933c7d2b988?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "id": 10,
+      "name": "USB-C Cable",
+      "description": "High-speed USB-C cable for fast charging and data transfer.",
+      "price": 20,
+      "quantity": 100,
+      "store": "Store 2",
+      "image": "https://media.istockphoto.com/id/615739788/photo/usb-type-c.webp?a=1&b=1&s=612x612&w=0&k=20&c=j7P1MB1N9ODhkW1pk211a-5yhmnoxhoAU1BuEwXquDY="
+    },
+    {
+      "id": 11,
+      "name": "Smartwatch",
+      "description": "Fitness tracker with heart rate monitoring.",
+      "price": 150,
+      "quantity": 35,
+      "store": "Store 1",
+      "image": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "id": 12,
+      "name": "Bluetooth Speaker",
+      "description": "Portable Bluetooth speaker with 12-hour battery life.",
+      "price": 100,
+      "quantity": 20,
+      "store": "Store 2",
+      "image": "https://images.unsplash.com/photo-1484704849700-f032a568e944?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "id": 13,
+      "name": "Gaming Console",
+      "description": "Next-gen gaming console with 4K support.",
+      "price": 500,
+      "quantity": 8,
+      "store": "Store 1",
+      "image": "https://images.unsplash.com/photo-1606144042614-b2417e99c4e3?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "id": 14,
+      "name": "Camera",
+      "description": "Mirrorless camera with 24MP sensor.",
+      "price": 700,
+      "quantity": 10,
+      "store": "Store 2",
+      "image": "https://images.unsplash.com/photo-1512790182412-b19e6d62bc39?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "id": 15,
+      "name": "Drone",
+      "description": "4K drone with 30-minute flight time.",
+      "price": 400,
+      "quantity": 5,
+      "store": "Store 1",
+      "image": "https://images.unsplash.com/photo-1507582020474-9a35b7d455d9?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "id": 16,
+      "name": "Projector",
+      "description": "HD projector with 1080p resolution.",
+      "price": 300,
+      "quantity": 12,
+      "store": "Store 2",
+      "image": "https://images.unsplash.com/photo-1535016120720-40c646be5580?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cHJvamVjdG9yfGVufDB8fDB8fHww"
+    },
+    {
+      "id": 17,
+      "name": "Router",
+      "description": "Wi-Fi 6 router with dual-band support.",
+      "price": 120,
+      "quantity": 25,
+      "store": "Store 1",
+      "image": "https://images.unsplash.com/photo-1606904825846-647eb07f5be2?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8V2klMjBGaSUyMDYlMjByb3V0ZXIlMjB3aXRoJTIwZHVhbCUyMGJhbmQlMjBzdXBwb3J0fGVufDB8fDB8fHww"
+    },
+    {
+      "id": 18,
+      "name": "Smart Bulb",
+      "description": "Wi-Fi-enabled smart bulb with RGB colors.",
+      "price": 30,
+      "quantity": 50,
+      "store": "Store 2",
+      "image": "https://images.unsplash.com/photo-1593341646782-e0b495cff86d?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "id": 19,
+      "name": "Fitness Band",
+      "description": "Waterproof fitness band with step tracking.",
+      "price": 50,
+      "quantity": 40,
+      "store": "Store 1",
+      "image": "https://images.unsplash.com/photo-1597074866923-dc0589150358?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "id": 20,
+      "name": "E-Reader",
+      "description": "E-ink e-reader with 8GB storage.",
+      "price": 100,
+      "quantity": 15,
+      "store": "Store 2",
+      "image": "https://images.unsplash.com/photo-1603406136476-85d8c3ec76a5?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8ZSUyMHJlYWRlcnxlbnwwfHwwfHx8MA%3D%3D"
+    }
+  ]
+}
