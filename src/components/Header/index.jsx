@@ -1,18 +1,28 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import "./index.css";
 
 const Header = () => {
   return (
     <nav>
-      <li>
-        <Link to="/">Home</Link>
-      </li>
-      <li>
-        <Link to="/invoice">Invoice Portal</Link>
-      </li>
-      <li>
-        <Link to="/product">Product Portal</Link>
-      </li>
+      <ul>
+        <li>
+          <Link to="/" className="link-item">
+            Home
+          </Link>
+        </li>
+
+        <li>
+          <Link to="/product" className="link-item">
+            Product
+          </Link>
+        </li>
+        <li>
+          <Link to="/invoice" className="link-item">
+            Invoice
+          </Link>
+        </li>
+      </ul>
     </nav>
   );
 };
