@@ -1,7 +1,84 @@
-.invoices-list-container {
+.invoice-list {
+  display: grid;
+  gap: 1rem;
+  padding: 1rem;
+  margin: 10px;
+  margin-bottom: 30px;
+}
+.invoices-filters-container {
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  flex-wrap: wrap;
-  margin-top: 30px;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.search-input {
+  width: 160px;
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 10px;
+}
+.filter-by-date {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+.filter-by-date p {
+  font-size: 10px;
+  margin-right: 10px;
+  display: none;
+}
+.filter-by-date input {
+  width: 160px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 6px;
+}
+
+.invoice-card {
+  border: 1px solid #ddd;
+  padding: 1rem;
+  border-radius: 8px;
+  transition: box-shadow 0.3s ease;
+}
+
+.invoice-card:hover {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.invoice-card h2 {
+  margin: 0;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.invoice-card p {
+  margin: 0.5rem 0;
+  color: #555;
+}
+.invoice-link {
+  text-decoration: none;
+}
+
+@media screen and (min-width: 992px) {
+  .search-input {
+    width: 50%;
+    font-size: 14px;
+  }
+  .filter-by-date {
+    flex-direction: row;
+    width: 50%;
+  }
+  .filter-by-date p {
+    font-size: 16px;
+    display: inline;
+  }
+  .filter-by-date input {
+    width: 50%;
+    height: 36px;
+    font-size: 16px;
+    padding: 6px;
+  }
 }

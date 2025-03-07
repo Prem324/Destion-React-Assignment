@@ -1,0 +1,238 @@
+[
+  {
+    "invoiceId": "INV1001",
+    "storeName": "Amazon",
+    "orderId": "ORD2001",
+    "date": "2025-03-01",
+    "items": [
+      {
+        "itemId": "ITEM001",
+        "itemName": "Apple AirPods Pro",
+        "quantity": 2,
+        "regularPrice": 249.99,
+        "dealPrice": 199.99,
+        "itemTotal": 399.98,
+        "itemTax": 32.0
+      },
+      {
+        "itemId": "ITEM002",
+        "itemName": "Kindle Paperwhite",
+        "quantity": 1,
+        "regularPrice": 139.99,
+        "dealPrice": 119.99,
+        "itemTotal": 119.99,
+        "itemTax": 9.6
+      }
+    ],
+    "subtotal": 519.97,
+    "totalTax": 41.6,
+    "grandTotal": 561.57
+  },
+  {
+    "invoiceId": "INV1002",
+    "storeName": "Best Buy",
+    "orderId": "ORD2002",
+    "date": "2023-03-02",
+    "items": [
+      {
+        "itemId": "ITEM003",
+        "itemName": "Sony 55-inch 4K TV",
+        "quantity": 1,
+        "regularPrice": 599.99,
+        "dealPrice": 549.99,
+        "itemTotal": 549.99,
+        "itemTax": 44.0
+      }
+    ],
+    "subtotal": 549.99,
+    "totalTax": 44.0,
+    "grandTotal": 593.99
+  },
+  {
+    "invoiceId": "INV1003",
+    "storeName": "Target",
+    "orderId": "ORD2003",
+    "date": "2023-03-03",
+    "items": [
+      {
+        "itemId": "ITEM004",
+        "itemName": "Nike Air Max 270",
+        "quantity": 1,
+        "regularPrice": 150.0,
+        "dealPrice": 130.0,
+        "itemTotal": 130.0,
+        "itemTax": 10.4
+      },
+      {
+        "itemId": "ITEM005",
+        "itemName": "Adidas Backpack",
+        "quantity": 2,
+        "regularPrice": 40.0,
+        "dealPrice": 35.0,
+        "itemTotal": 70.0,
+        "itemTax": 5.6
+      }
+    ],
+    "subtotal": 200.0,
+    "totalTax": 16.0,
+    "grandTotal": 216.0
+  },
+  {
+    "invoiceId": "INV1004",
+    "storeName": "Walmart",
+    "orderId": "ORD2004",
+    "date": "2025-03-03",
+    "items": [
+      {
+        "itemId": "ITEM006",
+        "itemName": "Dyson V11 Vacuum",
+        "quantity": 1,
+        "regularPrice": 599.99,
+        "dealPrice": 549.99,
+        "itemTotal": 549.99,
+        "itemTax": 44.0
+      },
+      {
+        "itemId": "ITEM007",
+        "itemName": "DeWalt Cordless Drill",
+        "quantity": 1,
+        "regularPrice": 129.99,
+        "dealPrice": 109.99,
+        "itemTotal": 109.99,
+        "itemTax": 8.8
+      }
+    ],
+    "subtotal": 659.98,
+    "totalTax": 52.8,
+    "grandTotal": 712.78
+  },
+  {
+    "invoiceId": "INV1005",
+    "storeName": "Costco",
+    "orderId": "ORD2005",
+    "date": "2025-02-05",
+    "items": [
+      {
+        "itemId": "ITEM008",
+        "itemName": "Kirkland Signature Coffee",
+        "quantity": 2,
+        "regularPrice": 15.0,
+        "dealPrice": 12.0,
+        "itemTotal": 24.0,
+        "itemTax": 1.92
+      }
+    ],
+    "subtotal": 24.0,
+    "totalTax": 1.92,
+    "grandTotal": 25.92
+  },
+  {
+    "invoiceId": "INV1006",
+    "storeName": "Home Depot",
+    "orderId": "ORD2006",
+    "date": "2025-03-07",
+    "items": [
+      {
+        "itemId": "ITEM009",
+        "itemName": "Ryobi Cordless Drill",
+        "quantity": 1,
+        "regularPrice": 79.99,
+        "dealPrice": 69.99,
+        "itemTotal": 69.99,
+        "itemTax": 5.6
+      }
+    ],
+    "subtotal": 69.99,
+    "totalTax": 5.6,
+    "grandTotal": 75.59
+  },
+  {
+    "invoiceId": "INV1007",
+    "storeName": "IKEA",
+    "orderId": "ORD2007",
+    "date": "2025-03-07",
+    "items": [
+      {
+        "itemId": "ITEM010",
+        "itemName": "Billy Bookcase",
+        "quantity": 1,
+        "regularPrice": 79.99,
+        "dealPrice": 69.99,
+        "itemTotal": 69.99,
+        "itemTax": 5.6
+      }
+    ],
+    "subtotal": 69.99,
+    "totalTax": 5.6,
+    "grandTotal": 75.59
+  },
+  {
+    "invoiceId": "INV1008",
+    "storeName": "Starbucks",
+    "orderId": "ORD2008",
+    "date": "2025-02-08",
+    "items": [
+      {
+        "itemId": "ITEM011",
+        "itemName": "Starbucks Coffee Mug",
+        "quantity": 2,
+        "regularPrice": 15.0,
+        "dealPrice": 12.0,
+        "itemTotal": 24.0,
+        "itemTax": 1.92
+      }
+    ],
+    "subtotal": 24.0,
+    "totalTax": 1.92,
+    "grandTotal": 25.92
+  },
+  {
+    "invoiceId": "INV1009",
+    "storeName": "Apple Store",
+    "orderId": "ORD2009",
+    "date": "2025-02-09",
+    "items": [
+      {
+        "itemId": "ITEM012",
+        "itemName": "iPhone 15 Pro",
+        "quantity": 1,
+        "regularPrice": 999.99,
+        "dealPrice": 949.99,
+        "itemTotal": 949.99,
+        "itemTax": 76.0
+      }
+    ],
+    "subtotal": 949.99,
+    "totalTax": 76.0,
+    "grandTotal": 1025.99
+  },
+  {
+    "invoiceId": "INV1010",
+    "storeName": "Nike",
+    "orderId": "ORD2010",
+    "date": "2025-02-10",
+    "items": [
+      {
+        "itemId": "ITEM013",
+        "itemName": "Nike Tech Fleece Joggers",
+        "quantity": 1,
+        "regularPrice": 100.0,
+        "dealPrice": 85.0,
+        "itemTotal": 85.0,
+        "itemTax": 6.8
+      },
+      {
+        "itemId": "ITEM014",
+        "itemName": "Nike Air Force 1 Shoes",
+        "quantity": 1,
+        "regularPrice": 110.0,
+        "dealPrice": 99.0,
+        "itemTotal": 99.0,
+        "itemTax": 7.92
+      }
+    ],
+    "subtotal": 184.0,
+    "totalTax": 14.72,
+    "grandTotal": 198.72
+  }
+]

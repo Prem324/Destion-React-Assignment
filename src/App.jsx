@@ -1,7 +1,7 @@
 import { Routes, Route } from "react-router-dom";
 import Home from "./components/Home";
 import Header from "./components/Header";
-import InvoicePortal from "./components/InvoiceGenerationPortal/InvoicePortal";
+import InvoicePortal from "./components/InvoiceGenerationPortal/InvoiceList";
 import ProductManagement from "./components/ProductManagementPortal/ProductList";
 import ProductDetails from "./components/ProductManagementPortal/ProductDetails";
 import InvoiceDetail from "./components/InvoiceGenerationPortal/InvoiceDetail";
