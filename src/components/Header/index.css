@@ -1,12 +1,29 @@
 nav {
   background-color: rgb(31, 156, 240);
   height: 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 20px;
+}
+
+nav h1 {
+  display: inline;
+  font-family: "Caveat";
+  font-size: 20px;
+  color: #ffffff;
+  font-weight: bold;
+  margin-left: 6px;
+  text-shadow: 2px 2px #ff00c8;
+  width: 36%;
+  cursor: pointer;
 }
 
 nav ul {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
   list-style-type: none;
   padding-left: 0;
@@ -24,4 +41,39 @@ nav ul li {
 .link-item {
   text-decoration: none;
   color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.link-item img {
+  width: 28px;
+  height: 28px;
+}
+
+.link-item p {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  nav {
+    padding: 0px 20px;
+  }
+  nav h1 {
+    font-size: 38px;
+  }
+
+  nav ul {
+    justify-content: center;
+  }
+  .link-item {
+    margin-right: 10px;
+  }
+  .link-item img {
+    margin-right: 6px;
+  }
+  .link-item p {
+    display: inline;
+  }
 }
