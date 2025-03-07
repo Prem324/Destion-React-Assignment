@@ -40,6 +40,13 @@
   color: #000;
 }
 
+.back-nav {
+  font-size: 28px;
+  margin-top: 16px;
+  margin-left: 12px;
+  cursor: pointer;
+}
+
 @media (min-width: 768px) {
   .product-detail-container {
     flex-direction: row;
