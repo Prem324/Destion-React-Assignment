@@ -14,7 +14,6 @@ function App() {
 
   return (
     <>
-      {/* Pass loggedIn and setLoggedIn to Header */}
       <Header loggedIn={loggedIn} setLoggedIn={setLoggedIn} />
       <Routes>
         <Route

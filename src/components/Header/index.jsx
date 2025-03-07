@@ -42,9 +42,9 @@ function Header({ loggedIn, setLoggedIn }) {
         </li>
 
         {loggedIn && (
-          <div className="logout-button-container">
+          <div onClick={handleLogout} className="logout-button-container">
             <img className="logout-icon" src={logoutIcon} />
-            <button onClick={handleLogout}>Logout</button>
+            <span>Logout</span>
           </div>
         )}
       </ul>

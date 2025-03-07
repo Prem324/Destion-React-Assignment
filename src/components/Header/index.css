@@ -57,20 +57,18 @@ nav ul li {
 }
 
 .logout-button-container {
+  background-color: transparent;
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
   align-items: center;
   margin-left: 16px;
 }
-
 .logout-button-container img {
   width: 30px;
   height: 30px;
 }
-
-.logout-button-container button {
-  background-color: transparent;
+.logout-button-container span {
   display: none;
 }
 
@@ -96,14 +94,15 @@ nav ul li {
   }
   .logout-button-container {
     border: 1px solid #ffffff;
-    padding: 0px 6px;
+    padding: 4px 8px;
     border-radius: 6px;
     cursor: pointer;
   }
-  .logout-button-container button {
+  .logout-button-container span {
     display: inline;
-    padding-left: 6px;
     font-weight: 600;
+    padding-left: 6px;
+    color: #ffffff;
   }
   .logout-button-container button:hover {
     background-color: transparent;
