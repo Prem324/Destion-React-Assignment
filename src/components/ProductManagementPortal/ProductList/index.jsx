@@ -1,13 +1,13 @@
 import React from "react";
 import ProductItem from "../ProductItem";
 import "./index.css";
+import products from "../../../products-content";
 
-function ProductList({ products }) {
+function ProductList() {
   return (
-    <div className="products-list-container">
-      {products.map((product) => (
-        <ProductItem key={product.id} product={product} />
-      ))}
+    <div className="product-management-portal-container">
+      <h1>Products</h1>
+      <ProductItem products={products} />
     </div>
   );
 }

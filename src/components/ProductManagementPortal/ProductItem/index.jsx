@@ -2,13 +2,21 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./index.css";
 
-function ProductItem({ product }) {
+function ProductItem({ products }) {
   return (
-    <div className="product-item">
-      <Link className="product-details-link" to={`products/${product.id}`}>
-        <img className="product-image" src={product.productImage} />
-        <h2 className="product-name">{product.name}</h2>
-      </Link>
+    <div className="products-list-container">
+      {products.map((product) => (
+        <div key={product.productId} className="product-item">
+          <Link
+            className="product-details-link"
+            key={product.productName}
+            to={"/products/" + product.productName}
+          >
+            <img className="product-image" src={product.imageUrl} />
+            <p className="product-name">{product.productName}</p>
+          </Link>
+        </div>
+      ))}
     </div>
   );
 }
