@@ -56,6 +56,24 @@ nav ul li {
   display: none;
 }
 
+.logout-button-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  margin-left: 16px;
+}
+
+.logout-button-container img {
+  width: 30px;
+  height: 30px;
+}
+
+.logout-button-container button {
+  background-color: transparent;
+  display: none;
+}
+
 @media screen and (min-width: 992px) {
   nav {
     padding: 0px 20px;
@@ -75,5 +93,19 @@ nav ul li {
   }
   .link-item p {
     display: inline;
+  }
+  .logout-button-container {
+    border: 1px solid #ffffff;
+    padding: 0px 6px;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  .logout-button-container button {
+    display: inline;
+    padding-left: 6px;
+    font-weight: 600;
+  }
+  .logout-button-container button:hover {
+    background-color: transparent;
   }
 }

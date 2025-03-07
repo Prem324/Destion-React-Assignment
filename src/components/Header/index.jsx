@@ -4,12 +4,20 @@ import "./index.css";
 import homeIcon from "../../assets/home.png";
 import productIcon from "../../assets/product-2.png";
 import invoiceIcon from "../../assets/invoice-2.png";
+import logoutIcon from "../../assets/log-out.png";
 
-const Header = () => {
+function Header({ loggedIn, setLoggedIn }) {
   const navigate = useNavigate();
+
   const onClickHeaderName = () => {
     navigate("/");
   };
+
+  const handleLogout = () => {
+    setLoggedIn(false); // Reset logged-in state
+    navigate("/login"); // Redirect to login page
+  };
+
   return (
     <nav>
       <h1 onClick={onClickHeaderName}>Invoices and Product Manager</h1>
@@ -20,22 +28,28 @@ const Header = () => {
             <p>Home</p>
           </Link>
         </li>
-
-        <li>
-          <Link to="/products" className="link-item">
-            <img src={productIcon} alt="product-icon" />
-            <p>Product Management</p>
-          </Link>
-        </li>
         <li>
           <Link to="/invoices" className="link-item">
             <img src={invoiceIcon} alt="invoice-icon" />
             <p>Invoice Portal</p>
           </Link>
         </li>
+        <li>
+          <Link to="/products" className="link-item">
+            <img src={productIcon} alt="product-icon" />
+            <p>Product Management</p>
+          </Link>
+        </li>
+
+        {loggedIn && (
+          <div className="logout-button-container">
+            <img className="logout-icon" src={logoutIcon} />
+            <button onClick={handleLogout}>Logout</button>
+          </div>
+        )}
       </ul>
     </nav>
   );
-};
+}
 
 export default Header;

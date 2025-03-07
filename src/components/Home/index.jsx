@@ -6,8 +6,7 @@ import "./index.css";
 function Home() {
   const navigate = useNavigate();
   const handleGetStarted = () => {
-    navigate("/products");
-    console.log("Get Started");
+    navigate("/invoices");
   };
   return (
     <div className="home-container">
