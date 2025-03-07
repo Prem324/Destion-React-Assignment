@@ -6,7 +6,7 @@ import "./index.css";
 function Home() {
   const navigate = useNavigate();
   const handleGetStarted = () => {
-    navigate("/product");
+    navigate("/products");
     console.log("Get Started");
   };
   return (

@@ -22,15 +22,15 @@ const Header = () => {
         </li>
 
         <li>
-          <Link to="/product" className="link-item">
+          <Link to="/products" className="link-item">
             <img src={productIcon} alt="product-icon" />
             <p>Product Management</p>
           </Link>
         </li>
         <li>
-          <Link to="/invoice" className="link-item">
+          <Link to="/invoices" className="link-item">
             <img src={invoiceIcon} alt="invoice-icon" />
-            <p>Invoice Generation</p>
+            <p>Invoice Portal</p>
           </Link>
         </li>
       </ul>

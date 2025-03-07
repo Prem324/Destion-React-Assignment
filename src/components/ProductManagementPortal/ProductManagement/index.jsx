@@ -79,7 +79,7 @@ function ProductManagement() {
   return (
     <div className="product-management-portal-container">
       {error && <p style={{ color: "red" }}>{error}</p>}
-      <h1>Product Management</h1>
+      <h1>Products</h1>
       <div className="product-filters-container">
         <input
           type="text"
