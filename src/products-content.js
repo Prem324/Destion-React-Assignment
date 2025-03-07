@@ -1,7 +1,7 @@
 const products = [
   {
     productId: "PROD001",
-    storeName: "Amazon",
+    storeName: "Apple Store",
     productName: "Apple AirPods Pro",
     description:
       "Active noise cancellation for immersive sound. Transparency mode for hearing the world around you.",
@@ -22,12 +22,12 @@ const products = [
   {
     productId: "PROD003",
     storeName: "Amazon",
-    productName: "Instant Pot Duo 7-in-1",
+    productName: "Epson EB-E01 Projector",
     description:
-      "7-in-1 multi-functional pressure cooker that replaces multiple kitchen appliances.",
+      "The Epson EB-E01 Projector delivers vibrant, high-quality visuals with 3,300 lumens of color brightness, compact design, and easy setup for seamless presentations and entertainment",
     price: 99.95,
     category: "Home",
-    imageUrl: "https://m.media-amazon.com/images/I/61WZ8UkkReL._AC_UL320_.jpg",
+    imageUrl: "https://m.media-amazon.com/images/I/51dWhEYo-hL._AC_UY218_.jpg",
   },
   {
     productId: "PROD004",
@@ -51,7 +51,7 @@ const products = [
   },
   {
     productId: "PROD006",
-    storeName: "Target",
+    storeName: "Nike",
     productName: "Nike Air Max 270",
     description:
       "Revolutionary cushioning and a sleek design for all-day comfort.",
@@ -70,22 +70,23 @@ const products = [
   },
   {
     productId: "PROD008",
-    storeName: "Walmart",
-    productName: "Dyson V11 Cordless Vacuum",
-    description: "Powerful suction and up to 60 minutes of fade-free cleaning.",
+    storeName: "Starbucks",
+    productName: "Starbucks Signature Chocolate",
+    description:
+      "Indulge in the rich, velvety taste of Starbucks Signature Hot Chocolate, crafted with premium cocoa and steamed milk for a decadent, comforting treat",
     price: 549.99,
     category: "Home",
-    imageUrl: "https://m.media-amazon.com/images/I/61xIxBIiTML._AC_UY218_.jpg",
+    imageUrl: "https://m.media-amazon.com/images/I/81r-Gd3b4JL._AC_UL320_.jpg",
   },
   {
     productId: "PROD009",
-    storeName: "Walmart",
-    productName: "DeWalt 20V Max Cordless Drill",
+    storeName: "Apple Store",
+    productName: "Apple MacBook Air Laptop",
     description:
-      "High-performance drill with a compact and lightweight design.",
-    price: 129.0,
+      "Ultra-thin and lightweight, the Apple MacBook Air delivers powerful performance, stunning Retina display, and all-day battery life in a sleek, portable design.",
+    price: 63990.0,
     category: "Tools",
-    imageUrl: "https://m.media-amazon.com/images/I/51WPS11IuSL._AC_UL320_.jpg",
+    imageUrl: "https://m.media-amazon.com/images/I/71jG+e7roXL._AC_UY218_.jpg",
   },
   {
     productId: "PROD010",
