@@ -1,50 +1,65 @@
-import React, { useState } from "react";
-import ProductItem from "../ProductItem";
+import { Link } from "react-router-dom";
+import { useState } from "react";
+import StoreFilter from "../StoreFilter";
+import SearchBar from "../SearchBar";
 import "./index.css";
-import products from "../../../products-content";
+const ProductList = ({ products, deleteProduct }) => {
+  const [selectedStore, setSelectedStore] = useState("");
+  const [searchQuery, setSearchQuery] = useState("");
 
-function ProductList() {
-  const [searchInput, setSearchInput] = useState("");
-  const [filterStore, setFilterStore] = useState("");
-
-  const filteredProducts = products.filter((product) => {
-    const matchesSearch = product.productName
-      .toLowerCase()
-      .includes(searchInput.toLowerCase());
-    const matchesStore = filterStore ? product.storeName === filterStore : true;
-    return matchesSearch && matchesStore;
-  });
+  const filteredProducts = products
+    .filter((product) =>
+      selectedStore ? product.storeName === selectedStore : true
+    )
+    .filter((product) =>
+      product.productName.toLowerCase().includes(searchQuery.toLowerCase())
+    );
 
   return (
-    <div className="product-management-portal-container">
-      <h1>Products</h1>
-      <div className="product-filters-container">
-        <input
-          type="text"
-          placeholder="Search by product name"
-          value={searchInput}
-          onChange={(e) => setSearchInput(e.target.value)}
-        />
-        <select
-          value={filterStore}
-          onChange={(e) => setFilterStore(e.target.value)}
-        >
-          <option value="">All Stores</option>
-          <option value="Amazon">Amazon</option>
-          <option value="Apple Store">Apple Store</option>
-          <option value="Best Buy">Best Buy</option>
-          <option value="Costco">Costco</option>
-          <option value="Home Depot">Home Depot</option>
-          <option value="IKEA">IKEA</option>
-          <option value="Nike">Nike</option>
-          <option value="Starbucks">Startbucks</option>
-          <option value="Target">Target</option>
-          <option value="Walmart">Walmart</option>
-        </select>
+    <div className="product-list">
+      <h2>Product List</h2>
+      <StoreFilter
+        stores={[...new Set(products.map((product) => product.storeName))]}
+        selectedStore={selectedStore}
+        setSelectedStore={setSelectedStore}
+      />
+      <SearchBar searchQuery={searchQuery} setSearchQuery={setSearchQuery} />
+      <div className="product-grid">
+        {filteredProducts.map((product) => (
+          <div key={product.productId} className="product-card">
+            <Link
+              to={`/products/${product.productId}`}
+              className="product-link"
+            >
+              <img
+                src={product.imageUrl}
+                alt={product.productName}
+                className="product-image"
+              />
+              <h3 className="product-name">{product.productName}</h3>
+            </Link>
+            <p className="product-description">{product.description}</p>
+            <p className="product-price">Price: ${product.price}</p>
+            <p className="product-store">Store: {product.storeName}</p>
+            <div className="product-actions">
+              <Link
+                to={`/products/${product.productId}/edit`}
+                className="edit-button"
+              >
+                Edit
+              </Link>
+              <button
+                onClick={() => deleteProduct(product.productId)}
+                className="delete-button"
+              >
+                Delete
+              </button>
+            </div>
+          </div>
+        ))}
       </div>
-      <ProductItem products={filteredProducts} />
     </div>
   );
-}
+};
 
 export default ProductList;

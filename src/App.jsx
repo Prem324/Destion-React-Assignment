@@ -4,13 +4,42 @@ import Home from "./components/Home";
 import Header from "./components/Header";
 import InvoicePortal from "./components/InvoiceGenerationPortal/InvoiceList";
 import ProductManagement from "./components/ProductManagementPortal/ProductList";
-import ProductDetails from "./components/ProductManagementPortal/ProductDetails";
+import ProductDetails from "./components/ProductManagementPortal/ProductDetail";
 import InvoiceDetail from "./components/InvoiceGenerationPortal/InvoiceDetail";
 import Login from "./components/Login";
+import products from "./data/productsData";
+import ProductDetail from "./components/ProductManagementPortal/ProductDetail";
+import ProductList from "./components/ProductManagementPortal/ProductList";
+import ProductForm from "./components/ProductManagementPortal/ProductForm";
+
 import "./App.css";
 
 function App() {
   const [loggedIn, setLoggedIn] = useState(false);
+  const [productsList, setProductsList] = useState(products);
+
+  const addProduct = (newProduct) => {
+    setProductsList([
+      ...productsList,
+      { ...newProduct, productId: `PROD${productsList.length + 1}` },
+    ]);
+  };
+
+  const updateProduct = (updatedProduct) => {
+    setProductsList(
+      productsList.map((product) =>
+        product.productId === updatedProduct.productId
+          ? updatedProduct
+          : product
+      )
+    );
+  };
+
+  const deleteProduct = (productId) => {
+    setProductsList(
+      productsList.filter((product) => product.productId !== productId)
+    );
+  };
 
   return (
     <>
@@ -36,7 +65,56 @@ function App() {
         />
         <Route
           path="/products"
-          element={loggedIn ? <ProductManagement /> : <Navigate to="/login" />}
+          element={
+            loggedIn ? (
+              <ProductList
+                products={productsList}
+                deleteProduct={deleteProduct}
+              />
+            ) : (
+              <Navigate to="/login" />
+            )
+          }
+        />
+        <Route
+          path="/products/new"
+          element={
+            loggedIn ? (
+              <ProductForm
+                addProduct={addProduct}
+                updateProduct={updateProduct}
+              />
+            ) : (
+              <Navigate to="/login" />
+            )
+          }
+        />
+        <Route
+          path="/products/:productId"
+          element={
+            loggedIn ? (
+              <ProductDetail
+                products={productsList}
+                deleteProduct={deleteProduct}
+              />
+            ) : (
+              <Navigate to="/login" />
+            )
+          }
+        />
+        <Route
+          path="/products/:productId/edit"
+          element={
+            loggedIn ? (
+              <ProductForm
+                addProduct={addProduct}
+                products={productsList}
+                updateProduct={updateProduct}
+              />
+            ) : (
+              <Navigate to="/login" />
+            )
+          }
         />
         <Route
           path="/products/:productName"

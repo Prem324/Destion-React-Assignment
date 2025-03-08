@@ -1,0 +1,15 @@
+.store-filter {
+  margin-bottom: 20px;
+}
+
+.store-filter label {
+  margin-right: 10px;
+  font-weight: bold;
+}
+
+.store-filter select {
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+}
