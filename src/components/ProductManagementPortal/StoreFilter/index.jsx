@@ -1,5 +1,5 @@
 import "./index.css";
-const StoreFilter = ({ stores, selectedStore, setSelectedStore }) => {
+function StoreFilter({ stores, selectedStore, setSelectedStore }) {
   return (
     <div className="store-filter">
       <label>Filter by Store: </label>
@@ -16,6 +16,6 @@ const StoreFilter = ({ stores, selectedStore, setSelectedStore }) => {
       </select>
     </div>
   );
-};
+}
 
 export default StoreFilter;

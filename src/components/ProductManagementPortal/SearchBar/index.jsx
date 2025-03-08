@@ -1,5 +1,5 @@
 import "./index.css";
-const SearchBar = ({ searchQuery, setSearchQuery }) => {
+function SearchBar({ searchQuery, setSearchQuery }) {
   return (
     <div className="search-bar">
       <label>Search by Product Name: </label>
@@ -11,6 +11,6 @@ const SearchBar = ({ searchQuery, setSearchQuery }) => {
       />
     </div>
   );
-};
+}
 
 export default SearchBar;

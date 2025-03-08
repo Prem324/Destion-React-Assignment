@@ -24,7 +24,7 @@ function App() {
       ...productsList,
       { ...newProduct, productId: `PROD${productsList.length + 1}` },
     ]);
-    toast.success("Product added successfully!"); // Popup for adding product
+    toast.success("Product added successfully!");
   };
 
   const updateProduct = (updatedProduct) => {
@@ -35,14 +35,14 @@ function App() {
           : product
       )
     );
-    toast.success("Product updated successfully!"); // Popup for updating product
+    toast.success("Product updated successfully!");
   };
 
   const deleteProduct = (productId) => {
     setProductsList(
       productsList.filter((product) => product.productId !== productId)
     );
-    toast.success("Product deleted successfully!"); // Popup for deleting product
+    toast.success("Product deleted successfully!");
   };
 
   return (

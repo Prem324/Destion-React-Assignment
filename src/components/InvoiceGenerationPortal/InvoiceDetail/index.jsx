@@ -5,7 +5,7 @@ import { IoMdArrowBack } from "react-icons/io";
 
 import "./index.css";
 
-const InvoiceDetail = () => {
+function InvoiceDetail() {
   const { state } = useLocation();
   const invoice = state?.invoice;
   const navigate = useNavigate();
@@ -115,6 +115,6 @@ const InvoiceDetail = () => {
       </div>
     </>
   );
-};
+}
 
 export default InvoiceDetail;

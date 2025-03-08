@@ -13,10 +13,9 @@ function Login({ setLoggedIn }) {
   const handleLogin = (e) => {
     e.preventDefault();
 
-    // Validate credentials
     if (username === "prem" && password === "prem@2023") {
-      setLoggedIn(true); // Set logged-in state
-      navigate("/"); // Redirect to home route
+      setLoggedIn(true);
+      navigate("/");
     } else {
       setError("Invalid username or password");
     }

@@ -2,7 +2,7 @@ import { useParams, useNavigate } from "react-router-dom";
 import { useState, useEffect } from "react";
 
 import "./index.css";
-const ProductForm = ({ addProduct, updateProduct, products }) => {
+function ProductForm({ addProduct, updateProduct, products }) {
   const { productId } = useParams();
   const navigate = useNavigate();
   const isEditMode = !!productId;
@@ -123,6 +123,6 @@ const ProductForm = ({ addProduct, updateProduct, products }) => {
       </form>
     </>
   );
-};
+}
 
 export default ProductForm;

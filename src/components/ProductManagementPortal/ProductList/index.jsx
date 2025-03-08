@@ -3,7 +3,7 @@ import { useState } from "react";
 import StoreFilter from "../StoreFilter";
 import SearchBar from "../SearchBar";
 import "./index.css";
-const ProductList = ({ products, deleteProduct }) => {
+function ProductList({ products, deleteProduct }) {
   const [selectedStore, setSelectedStore] = useState("");
   const [searchQuery, setSearchQuery] = useState("");
 
@@ -70,6 +70,6 @@ const ProductList = ({ products, deleteProduct }) => {
       </div>
     </>
   );
-};
+}
 
 export default ProductList;

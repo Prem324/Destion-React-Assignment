@@ -1,7 +1,7 @@
 import { useParams, useNavigate } from "react-router-dom";
 import "./index.css";
 
-const ProductDetail = ({ products, deleteProduct }) => {
+function ProductDetail({ products, deleteProduct }) {
   const { productId } = useParams();
   const navigate = useNavigate();
   const product = products.find((p) => p.productId === productId);
@@ -44,6 +44,6 @@ const ProductDetail = ({ products, deleteProduct }) => {
       </div>
     </div>
   );
-};
+}
 
 export default ProductDetail;

@@ -4,7 +4,7 @@ An application that allows store owners to manage invoices and product informati
 
 > Demo
 >
-> Vercel Link: https://prems-invoice-product-management.vercel.app/
+> Vercel Link: https://prems-destion-react-assignment.vercel.app/
 
 ### Usage
 
@@ -22,86 +22,20 @@ npm start                           //to start the application
 
 Frontend - ReactJS (React Router)
 
-### Functionality
-
-| Page         | Page Details                                                                                                                             | Navigation                                                                             |
-| ------------ | ---------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------- |
-| Home         | Header - Links for pages Home, Book List, Cart, Banner - Heading, description, and “Explore Books” Button                                | -                                                                                      |
-| Book List    | Header - Links for pages Home, Book List, Cart, Book Items - image, title, subtitle, price, Search (by title, author), Filter (by price) | “Book List” link in Header, “Explore Books” Button, “Back” Button in Book Details Page |
-| Book Details | Book detailed Information - image, title, subtitle, price, description, etc., “Add to cart” Button, “Back” button                        | Each Book Item in Book List Page                                                       |
-| Cart         | Cart Items, “Remove” Button, Order Summary, “Checkout” Button                                                                            | “Cart” link in Header, “Back” Button in Checkout Page                                  |
-| Checkout     | “Back” Button, Order Form - Personal Details - First Name, Last Name, Email, Mobile No. , Place Order Button, Order Summary              | “Checkout” Button in Cart                                                              |
-
 ### Technical Details
 
 ### Routes
 
-| Page            | Route           | Path          |
-| --------------- | --------------- | ------------- |
-| Login           | Login           | /login        |
-| Home            | Home            | /             |
-| Invoice List    | Invoice List    | /invoices     |
-| Invoice Details | Invoice Details | /invoices/:id |
-| Product List    | Product List    | /products     |
-| Product Details | Product Details | /products/:id |
-
-### Routes & Components
-
-**Home**
-
-| Component | Details                                         | State              | API (IT Bookstore) |
-| --------- | ----------------------------------------------- | ------------------ | ------------------ |
-| Home      | Heading, Description, and "ExploreBooks" button | -                  | -                  |
-| Header    | Links for pages Home, Book List, Cart           | (Context Consumer) | -                  |
-
-**Book List**
-
-| Component    | Details                                    | State                                 | API (IT Bookstore) |
-| ------------ | ------------------------------------------ | ------------------------------------- | ------------------ |
-| BookList     |                                            | apiStatus, booksData, priceRangeValue | /new               |
-| Header       | Links for pages Home, Book List, Cart      | (Context Consumer)                    | -                  |
-| SearchInput  | Search (by title, author)                  | searchInputValue                      | /search/{query}    |
-| PriceRange   | Filter (by price)                          | -                                     | -                  |
-| BookItem     | Book Items (title, subtitle, image, price) | -                                     | -                  |
-| Loader       |                                            | -                                     | -                  |
-| ErrorMessage |                                            | -                                     | -                  |
-
-**Book Details**
-
-| Component    | Details                                                                                                            | State                      | API (IT Bookstore) |
-| ------------ | ------------------------------------------------------------------------------------------------------------------ | -------------------------- | ------------------ |
-| BookDetails  | Book detailed Information -  image, title, subtitle, price, description, etc., “Add to cart” Button, “Back” button | apiStatus, bookDetailsData | /books/{isbn}      |
-| Header       | Links for pages Home, Book List, Cart                                                                              | (Context Consumer)         | -                  |
-| Loader       |                                                                                                                    | -                          | -                  |
-| ErrorMessage |                                                                                                                    | -                          | -                  |
-
-**Cart**
-
-| Components | Details                                                         | State              | API (IT Bookstore) |
-| ---------- | --------------------------------------------------------------- | ------------------ | ------------------ |
-| Cart       | Cart Items, “Remove” Button, Order Summary, “Checkout” Button   | (Context Consumer) | -                  |
-| Header     | Links for pages Home, Book List, Cart                           | (Context Consumer) | -                  |
-| CartItem   | Book Detailed Info (image, title, subtitle, price, description) | (Context Consumer) | -                  |
-
-**Checkout**
-
-| Components      | Details                                                                                                      | State                        | API (IT Bookstore) |
-| --------------- | ------------------------------------------------------------------------------------------------------------ | ---------------------------- | ------------------ |
-| Checkout        | “Back” button                                                                                                | (Context Consumer)           | -                  |
-| UserDetailsForm | Order Form - Personal Details - First Name, Last Name, Email, Mobile No. , Place Order Button, Order Summary | userDetails, isFormSubmitted | -                  |
-
-**Not Found**
-
-| Components | Details                               | State              | API (IT Bookstore)                    |
-| ---------- | ------------------------------------- | ------------------ | ------------------------------------- |
-| NotFound   | -                                     | -                  | -                                     |
-| Header     | Links for pages Home, Book List, Cart | (Context Consumer) | Links for pages Home, Book List, Cart |
-
-**App**
-
-| Component | Details | State                                                                     | API (IT Bookstore) |
-| --------- | ------- | ------------------------------------------------------------------------- | ------------------ |
-| App       | -       | cartList (Context Provider), Context: cartList, addToCart, deleteFromCart | -                  |
+| Page            | Route           | Path                      |
+| --------------- | --------------- | ------------------------- |
+| Login           | Login           | /login                    |
+| Home            | Home            | /                         |
+| Invoice List    | Invoice List    | /invoices                 |
+| Invoice Details | Invoice Details | /invoices/:id             |
+| Product List    | Product List    | /products                 |
+| Product Details | Product Details | /products/:id             |
+| Product Form    | Product Form    | /products/new             |
+| Poriduct Form   | Product Form    | /products/:productId/edit |
 
 ### Guidelines
 
@@ -110,27 +44,18 @@ Frontend - ReactJS (React Router)
   - Included a README file for explaining the project setup, usage instructions, and any additional information.
 - Followed Clean Code Guidelines
 - The repo is well-organized and easy to navigate
-  - Followed the `create-react-app` folder structure
+  - Followed the `create vite@latest` folder structure
 - The Application handled all the errors
 
 ### Resources
 
-#### Design Files
-
-Pages: Home, Book List, Book Details, Shopping Cart, Checkout
-
-Reference: https://www.crossword.in/
-
 #### API
 
-Books, Book Details, Search
-
-Reference: https://api.itbook.store
+- Using Mock Data
 
 #### Third-party packages
 
 - React Router (react-router-dom v5.2.0)
 - Icons (react-icons)
 - jsPDF (jspdf)
-
-### Future Improvements
+- Popup Status (react-toatify)

@@ -14,8 +14,8 @@ function Header({ loggedIn, setLoggedIn }) {
   };
 
   const handleLogout = () => {
-    setLoggedIn(false); // Reset logged-in state
-    navigate("/login"); // Redirect to login page
+    setLoggedIn(false);
+    navigate("/login");
   };
 
   return (
