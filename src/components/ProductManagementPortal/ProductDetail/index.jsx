@@ -11,8 +11,10 @@ const ProductDetail = ({ products, deleteProduct }) => {
   }
 
   const handleDelete = () => {
-    deleteProduct(product.productId);
-    navigate("/products");
+    if (window.confirm("Are you sure you want to delete this product?")) {
+      deleteProduct(product.productId);
+      navigate("/products");
+    }
   };
 
   return (

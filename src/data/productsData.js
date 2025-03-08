@@ -4,7 +4,7 @@ const products = [
     storeName: "Apple Store",
     productName: "Apple AirPods Pro",
     description:
-      "Active noise cancellation for immersive sound. Transparency mode for hearing the world around you.",
+      "Premium wireless earbuds with active noise cancellation, transparency mode, and customizable fit for immersive sound and all-day comfort",
     price: 249.99,
     category: "Electronics",
     imageUrl: "https://m.media-amazon.com/images/I/61SUj2aKoEL._AC_SL1500_.jpg",
@@ -14,7 +14,7 @@ const products = [
     storeName: "Amazon",
     productName: "Kindle Paperwhite",
     description:
-      "Waterproof, high-resolution display, and weeks of battery life.",
+      "A high-resolution, glare-free e-reader with waterproof design, adjustable backlight, and weeks-long battery life for seamless reading anywhere",
     price: 139.99,
     category: "Electronics",
     imageUrl: "https://m.media-amazon.com/images/I/61hPhRZx84L._AC_UY218_.jpg",
@@ -34,7 +34,7 @@ const products = [
     storeName: "Best Buy",
     productName: "Sony 55-inch 4K Ultra HD TV",
     description:
-      "Experience stunning 4K picture quality with vibrant colors and sharp details.",
+      "Sony 55-inch 4K Ultra HD TV: Stunning picture quality with vibrant colors, HDR support, and smart features for an immersive home entertainment experience",
     price: 599.99,
     category: "Electronics",
     imageUrl: "https://m.media-amazon.com/images/I/81h-r-3hioL._AC_UY218_.jpg",
@@ -44,7 +44,7 @@ const products = [
     storeName: "Best Buy",
     productName: "Sony PlayStation 5",
     description:
-      "Next-gen gaming console with ultra-high-speed SSD and immersive 3D audio.",
+      "Next-gen gaming console with lightning-fast loading, breathtaking graphics, immersive 3D audio, and adaptive haptic feedback for a revolutionary gaming experience",
     price: 499.99,
     category: "Electronics",
     imageUrl: "https://m.media-amazon.com/images/I/61998CBydXL._AC_UY218_.jpg",
@@ -54,7 +54,7 @@ const products = [
     storeName: "Nike",
     productName: "Nike Air Max 270",
     description:
-      "Revolutionary cushioning and a sleek design for all-day comfort.",
+      "Iconic lifestyle sneakers featuring the tallest Max Air unit for unmatched comfort, bold style, and all-day wearability",
     price: 150.0,
     category: "Clothing",
     imageUrl: "https://m.media-amazon.com/images/I/61hhB82FgGL._AC_UL320_.jpg",
@@ -63,7 +63,8 @@ const products = [
     productId: "PROD007",
     storeName: "Target",
     productName: "Adidas Backpack",
-    description: "Durable and stylish backpack for everyday use.",
+    description:
+      "Durable, stylish, and functional backpack with ample storage, comfortable straps, and iconic Adidas design for everyday use or sports",
     price: 40.0,
     category: "Accessories",
     imageUrl: "https://m.media-amazon.com/images/I/81hpFNU+UWL._AC_UL320_.jpg",
@@ -83,7 +84,7 @@ const products = [
     storeName: "Apple Store",
     productName: "Apple MacBook Air Laptop",
     description:
-      "Ultra-thin and lightweight, the Apple MacBook Air delivers powerful performance, stunning Retina display, and all-day battery life in a sleek, portable design.",
+      "Ultra-thin and lightweight, the Apple MacBook Air delivers powerful performance, stunning Retina display, and all-day battery life in a sleek, portable design",
     price: 63990.0,
     category: "Tools",
     imageUrl: "https://m.media-amazon.com/images/I/71jG+e7roXL._AC_UY218_.jpg",
@@ -93,7 +94,7 @@ const products = [
     storeName: "Walmart",
     productName: "Instant Pot Duo 7-in-1",
     description:
-      "7-in-1 multi-functional pressure cooker that replaces multiple kitchen appliances.",
+      "A versatile multi-cooker combining seven kitchen appliances in one, offering pressure cooking, slow cooking, steaming, and more for quick, easy meals",
     price: 99.95,
     category: "Home",
     imageUrl: "https://m.media-amazon.com/images/I/61WZ8UkkReL._AC_UL320_.jpg",
@@ -102,7 +103,8 @@ const products = [
     productId: "PROD011",
     storeName: "Costco",
     productName: "Kirkland Signature Coffee",
-    description: "Premium coffee beans for a rich and smooth flavor.",
+    description:
+      " Premium, rich, and smooth coffee blends offering exceptional quality and value for a satisfying brew every time",
     price: 15.0,
     category: "Groceries",
     imageUrl: "https://m.media-amazon.com/images/I/81Flo4xyQWL._AC_UL320_.jpg",
@@ -111,7 +113,8 @@ const products = [
     productId: "PROD012",
     storeName: "Costco",
     productName: "Dyson V11 Cordless Vacuum",
-    description: "Powerful suction and up to 60 minutes of fade-free cleaning.",
+    description:
+      "Powerful, intelligent cordless vacuum with advanced suction, LCD screen, and up to 60 minutes of fade-free cleaning for ultimate convenience",
     price: 549.99,
     category: "Home",
     imageUrl: "https://m.media-amazon.com/images/I/61xIxBIiTML._AC_UY218_.jpg",
@@ -121,7 +124,7 @@ const products = [
     storeName: "Home Depot",
     productName: "DeWalt 20V Max Cordless Drill",
     description:
-      "High-performance drill with a compact and lightweight design.",
+      "High-performance, versatile cordless drill with powerful motor, compact design, and long-lasting battery for professional-grade results",
     price: 129.0,
     category: "Tools",
     imageUrl: "https://m.media-amazon.com/images/I/51WPS11IuSL._AC_UL320_.jpg",
@@ -130,7 +133,8 @@ const products = [
     productId: "PROD014",
     storeName: "Home Depot",
     productName: "Ryobi 18V Cordless Drill",
-    description: "Affordable and reliable cordless drill for DIY projects.",
+    description:
+      "Reliable, lightweight, and versatile cordless drill with adjustable clutch, keyless chuck, and long-lasting battery for DIY projects and home repairs",
     price: 79.99,
     category: "Tools",
     imageUrl: "https://m.media-amazon.com/images/I/516H0VcEX1L._AC_UL320_.jpg",
@@ -139,7 +143,7 @@ const products = [
     productId: "PROD015",
     storeName: "IKEA",
     productName: "Billy Bookcase",
-    description: "A timeless design that fits perfectly in any room.",
+    description: "A timeless design that fits perfectly in any room",
     price: 79.99,
     category: "Furniture",
     imageUrl: "https://m.media-amazon.com/images/I/51DbXNjLjdL._AC_UL320_.jpg",
@@ -148,7 +152,8 @@ const products = [
     productId: "PROD016",
     storeName: "IKEA",
     productName: "POÄNG Armchair",
-    description: "Comfortable and stylish armchair for your living room.",
+    description:
+      "Iconic, ergonomic armchair with a timeless design, flexible frame, and cushioned comfort for a perfect blend of style and relaxation",
     price: 99.99,
     category: "Furniture",
     imageUrl: "https://m.media-amazon.com/images/I/41aLt0fvXrL._AC_UL320_.jpg",
@@ -157,7 +162,8 @@ const products = [
     productId: "PROD017",
     storeName: "Starbucks",
     productName: "Starbucks Coffee Mug",
-    description: "A classic white ceramic mug with the Starbucks logo.",
+    description:
+      "Durable, stylish, and iconic mugs designed to enhance your coffee experience with a touch of Starbucks charm",
     price: 12.99,
     category: "Kitchen",
     imageUrl: "https://m.media-amazon.com/images/I/410epLkArAL._AC_UL320_.jpg",
@@ -166,7 +172,8 @@ const products = [
     productId: "PROD018",
     storeName: "Apple Store",
     productName: "iPhone 15 Pro",
-    description: "The ultimate iPhone with a titanium design and A17 Pro chip.",
+    description:
+      "A premium smartphone featuring a sleek titanium design, advanced A17 Pro chip, enhanced camera system, and seamless iOS experience for peak performance",
     price: 999.0,
     category: "Electronics",
     imageUrl: "https://m.media-amazon.com/images/I/81SigpJN1KL._AC_UY218_.jpg",
@@ -175,7 +182,8 @@ const products = [
     productId: "PROD019",
     storeName: "Nike",
     productName: "Nike Tech Fleece Joggers",
-    description: "Soft, comfortable joggers with a modern fit.",
+    description:
+      "Lightweight, stylish joggers with premium Tech Fleece fabric for exceptional comfort, warmth, and a modern athletic look",
     price: 100.0,
     category: "Clothing",
     imageUrl: "https://m.media-amazon.com/images/I/61sXk8gd5ML._AC_UL320_.jpg",
@@ -184,7 +192,8 @@ const products = [
     productId: "PROD020",
     storeName: "Nike",
     productName: "Nike Air Force 1 Shoes",
-    description: "Iconic sneakers with a timeless design.",
+    description:
+      "Timeless, iconic sneakers with a sleek design, durable leather construction, and cushioned sole for unmatched style and comfort",
     price: 110.0,
     category: "Clothing",
     imageUrl: "https://m.media-amazon.com/images/I/61xCZR-TBmL._AC_UL320_.jpg",

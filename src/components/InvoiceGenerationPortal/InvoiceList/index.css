@@ -42,6 +42,7 @@
   padding: 1rem;
   border-radius: 8px;
   transition: box-shadow 0.3s ease;
+  background-color: #ffffff;
 }
 
 .invoice-card:hover {

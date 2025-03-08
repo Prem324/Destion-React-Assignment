@@ -16,49 +16,59 @@ const ProductList = ({ products, deleteProduct }) => {
     );
 
   return (
-    <div className="product-list">
-      <h2>Product List</h2>
-      <StoreFilter
-        stores={[...new Set(products.map((product) => product.storeName))]}
-        selectedStore={selectedStore}
-        setSelectedStore={setSelectedStore}
-      />
-      <SearchBar searchQuery={searchQuery} setSearchQuery={setSearchQuery} />
-      <div className="product-grid">
-        {filteredProducts.map((product) => (
-          <div key={product.productId} className="product-card">
-            <Link
-              to={`/products/${product.productId}`}
-              className="product-link"
-            >
-              <img
-                src={product.imageUrl}
-                alt={product.productName}
-                className="product-image"
-              />
-              <h3 className="product-name">{product.productName}</h3>
-            </Link>
-            <p className="product-description">{product.description}</p>
-            <p className="product-price">Price: ${product.price}</p>
-            <p className="product-store">Store: {product.storeName}</p>
-            <div className="product-actions">
-              <Link
-                to={`/products/${product.productId}/edit`}
-                className="edit-button"
-              >
-                Edit
-              </Link>
-              <button
-                onClick={() => deleteProduct(product.productId)}
-                className="delete-button"
-              >
-                Delete
-              </button>
-            </div>
-          </div>
-        ))}
+    <>
+      <div className="App">
+        <h1>Product Management Portal</h1>
+        <nav className="product-navbar">
+          <Link className="product-navbar-link" to="/products/new">
+            Add Product
+          </Link>
+        </nav>
       </div>
-    </div>
+      <div className="product-list">
+        <h2>Product List</h2>
+        <StoreFilter
+          stores={[...new Set(products.map((product) => product.storeName))]}
+          selectedStore={selectedStore}
+          setSelectedStore={setSelectedStore}
+        />
+        <SearchBar searchQuery={searchQuery} setSearchQuery={setSearchQuery} />
+        <div className="product-grid">
+          {filteredProducts.map((product) => (
+            <div key={product.productId} className="product-card">
+              <Link
+                to={`/products/${product.productId}`}
+                className="product-link"
+              >
+                <img
+                  src={product.imageUrl}
+                  alt={product.productName}
+                  className="product-image"
+                />
+                <h3 className="product-name">{product.productName}</h3>
+              </Link>
+              <p className="product-description">{product.description}</p>
+              <p className="product-price">Price: ${product.price}</p>
+              <p className="product-store">Store: {product.storeName}</p>
+              <div className="product-actions">
+                <Link
+                  to={`/products/${product.productId}/edit`}
+                  className="edit-button"
+                >
+                  Edit
+                </Link>
+                <button
+                  onClick={() => deleteProduct(product.productId)}
+                  className="delete-button"
+                >
+                  Delete
+                </button>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </>
   );
 };
 

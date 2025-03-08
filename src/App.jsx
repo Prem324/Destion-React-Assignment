@@ -1,9 +1,10 @@
 import { Routes, Route, Navigate } from "react-router-dom";
 import { useState } from "react";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import Home from "./components/Home";
 import Header from "./components/Header";
 import InvoicePortal from "./components/InvoiceGenerationPortal/InvoiceList";
-import ProductManagement from "./components/ProductManagementPortal/ProductList";
 import ProductDetails from "./components/ProductManagementPortal/ProductDetail";
 import InvoiceDetail from "./components/InvoiceGenerationPortal/InvoiceDetail";
 import Login from "./components/Login";
@@ -23,6 +24,7 @@ function App() {
       ...productsList,
       { ...newProduct, productId: `PROD${productsList.length + 1}` },
     ]);
+    toast.success("Product added successfully!"); // Popup for adding product
   };
 
   const updateProduct = (updatedProduct) => {
@@ -33,12 +35,14 @@ function App() {
           : product
       )
     );
+    toast.success("Product updated successfully!"); // Popup for updating product
   };
 
   const deleteProduct = (productId) => {
     setProductsList(
       productsList.filter((product) => product.productId !== productId)
     );
+    toast.success("Product deleted successfully!"); // Popup for deleting product
   };
 
   return (
@@ -122,6 +126,17 @@ function App() {
         />
         <Route path="*" element={<Navigate to="/login" />} />
       </Routes>
+      <ToastContainer
+        position="top-right"
+        autoClose={3000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+      />
     </>
   );
 }

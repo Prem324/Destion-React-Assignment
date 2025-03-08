@@ -1,11 +1,14 @@
 .product-list {
   padding: 20px;
+  background-color: #f4f4f9;
 }
 
 .product-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  gap: 20px;
+  gap: 80px;
+  margin-top: 40px;
+  padding-bottom: 80px;
 }
 
 .product-card {
@@ -79,6 +82,7 @@
   border-radius: 4px;
   cursor: pointer;
   font-size: 0.9rem;
+  text-decoration: none;
 }
 
 .edit-button {
@@ -97,4 +101,23 @@
 
 .delete-button:hover {
   background-color: #c0392b;
+}
+
+.product-navbar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  background-color: transparent;
+}
+
+.product-navbar-link {
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 600;
+  background-color: #1795e9;
+  padding: 10px;
+  align-self: flex-end;
+  border-radius: 6px;
 }
